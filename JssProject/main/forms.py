@@ -19,8 +19,10 @@ class JssForm(forms.ModelForm):
         })
 
         self.fields['content'].widget.attrs.update({
-            'placeholder' : '내용을 입력하세요'
+            'class' : 'jss_content_form',
         })
+
+
 
 class CommentForm(forms.ModelForm):
 
